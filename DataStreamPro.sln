@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Common.Utils"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5C28C124-EB78-42CD-B53B-30600699EA91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStreamPro.Web", "src\Presentation\DataStreamPro.Web\DataStreamPro.Web.csproj", "{7B23D66E-F984-4296-A183-29D287252049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Web", "src\Presentation\DataStreamPro.Web\DataStreamPro.Web.csproj", "{7B23D66E-F984-4296-A183-29D287252049}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "src\Presentation\ClassLibrary1\ClassLibrary1.csproj", "{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{7B23D66E-F984-4296-A183-29D287252049}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B23D66E-F984-4296-A183-29D287252049}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B23D66E-F984-4296-A183-29D287252049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +125,7 @@ Global
 		{C79C178E-AB20-4AB3-AFAC-EADDBF31697F} = {6D70063A-14EA-4D0C-B235-08F261383D9E}
 		{5C28C124-EB78-42CD-B53B-30600699EA91} = {30891B52-A8E1-4EBE-9C84-CB365FE80F3A}
 		{7B23D66E-F984-4296-A183-29D287252049} = {5C28C124-EB78-42CD-B53B-30600699EA91}
+		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4} = {5C28C124-EB78-42CD-B53B-30600699EA91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {301E98B2-735E-482E-AB8A-6F3F8D317158}
