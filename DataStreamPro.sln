@@ -35,17 +35,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.WebApi", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.WebApi\DataStreamPro.Producer.Spotify.WebApi.csproj", "{48E56BDA-B45D-46E6-A70E-CBB6822AE18C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{32506D0F-ED0B-4F42-8232-6827751FED85}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{32506D0F-ED0B-4F42-8232-6827751FED85}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{90019B52-9861-4B50-8CCC-906B847814F5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{42C60681-8C10-4D60-A49D-1084C1B5D1B9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{B708FB33-3A16-49CA-9D5B-54C1ED43E747}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{B708FB33-3A16-49CA-9D5B-54C1ED43E747}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6D70063A-14EA-4D0C-B235-08F261383D9E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Common.Utils", "src\Common\DataStreamPro.Utils\DataStreamPro.Common.Utils.csproj", "{C79C178E-AB20-4AB3-AFAC-EADDBF31697F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5C28C124-EB78-42CD-B53B-30600699EA91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStreamPro.Web", "src\DataStreamPro.Web\DataStreamPro.Web.csproj", "{7B23D66E-F984-4296-A183-29D287252049}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +89,10 @@ Global
 		{C79C178E-AB20-4AB3-AFAC-EADDBF31697F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C79C178E-AB20-4AB3-AFAC-EADDBF31697F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C79C178E-AB20-4AB3-AFAC-EADDBF31697F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B23D66E-F984-4296-A183-29D287252049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B23D66E-F984-4296-A183-29D287252049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B23D66E-F984-4296-A183-29D287252049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B23D66E-F984-4296-A183-29D287252049}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +117,8 @@ Global
 		{B708FB33-3A16-49CA-9D5B-54C1ED43E747} = {30891B52-A8E1-4EBE-9C84-CB365FE80F3A}
 		{6D70063A-14EA-4D0C-B235-08F261383D9E} = {30891B52-A8E1-4EBE-9C84-CB365FE80F3A}
 		{C79C178E-AB20-4AB3-AFAC-EADDBF31697F} = {6D70063A-14EA-4D0C-B235-08F261383D9E}
+		{5C28C124-EB78-42CD-B53B-30600699EA91} = {30891B52-A8E1-4EBE-9C84-CB365FE80F3A}
+		{7B23D66E-F984-4296-A183-29D287252049} = {5C28C124-EB78-42CD-B53B-30600699EA91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {301E98B2-735E-482E-AB8A-6F3F8D317158}
