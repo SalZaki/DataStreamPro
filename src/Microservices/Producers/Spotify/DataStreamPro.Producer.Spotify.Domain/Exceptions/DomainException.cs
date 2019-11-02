@@ -1,6 +1,6 @@
 ﻿using DataStreamPro.Producer.Spotify.Domain;
 
-namespace DataSubject.Domain.Exceptions
+namespace DataStreamPro.Producer.Spotify.Domain.Exceptions
 {
     public class DomainException : BaseException
     {
