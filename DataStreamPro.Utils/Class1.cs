@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataStreamPro.Producer.Spotify.WebApi
+namespace DataStreamPro.Utils
 {
     public class Class1
     {
