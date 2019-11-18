@@ -11,9 +11,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Common\DataStreamPro.Utils\DataStreamPro.Common.Utils.csproj" />
+    <ProjectReference Include="..\DataStreamPro.Producer.Spotify.Infrastructure\DataStreamPro.Producer.Spotify.Infrastructure.csproj" />
+    <ProjectReference Include="..\DataStreamPro.Producer.Spotify.WebApi\DataStreamPro.Producer.Spotify.WebApi.csproj" />
   </ItemGroup>
 
 </Project>

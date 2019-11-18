@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+
+using MediatR;
+
 using DataStreamPro.Producer.Spotify.WebApi.Controllers;
 
 namespace DataStreamPro.Producer.Spotify.WebApi
@@ -9,6 +12,10 @@ namespace DataStreamPro.Producer.Spotify.WebApi
     [Produces("application/xml", "application/json")]
     public class PlaylistController : BaseController
     {
+        public PlaylistController(IMediator mediator)
+            : base(mediator)
+        {
 
+        }
     }
 }

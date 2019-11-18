@@ -6,9 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.7" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Common\DataStreamPro.Utils\DataStreamPro.Common.Utils.csproj" />
+    <ProjectReference Include="..\DataStreamPro.Producer.Spotify.Application\DataStreamPro.Producer.Spotify.Application.csproj" />
+    <ProjectReference Include="..\DataStreamPro.Producer.Spotify.Infrastructure\DataStreamPro.Producer.Spotify.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassLibrary1
+namespace DataStreamPro.Producer.Spotify.DataContracts
 {
     public class Class1
     {

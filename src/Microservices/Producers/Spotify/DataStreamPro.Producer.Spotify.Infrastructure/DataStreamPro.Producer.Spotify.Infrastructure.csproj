@@ -3,6 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <LangVersion>7.1</LangVersion>
+    <AssemblyName>DataStreamPro.Producer.Spotify.Infrastructure</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Common\DataStreamPro.Utils\DataStreamPro.Common.Utils.csproj" />
+    <ProjectReference Include="..\DataStreamPro.Producer.Spotify.Application\DataStreamPro.Producer.Spotify.Application.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -11,29 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{04CA4D72-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{165AB7FF-1C5F-4AF0-9766-C2C3AC8385D9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EA5A7C89-81F6-4D5B-BCB4-C640D3F757CD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Common", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Common\DataStreamPro.Producer.Spotify.Common.csproj", "{8C1F15B3-8C1B-4576-9FC8-41D0D31E3D4E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Domain", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Domain\DataStreamPro.Producer.Spotify.Domain.csproj", "{27DD8A38-4113-4185-99E7-7AF73AB1C259}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Infrastructure.Data", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Infrastructure.Data\DataStreamPro.Producer.Spotify.Infrastructure.Data.csproj", "{262564B9-31DA-41E8-A4A2-13AFED3306A0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Infrastructure", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Infrastructure\DataStreamPro.Producer.Spotify.Infrastructure.csproj", "{E7D44761-0F7B-40C9-972B-205E38658093}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Producers", "Producers", "{B0A15D32-2024-4C45-A510-4871DE0D08E1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumers", "Consumers", "{9789135B-7546-414A-B667-0C7A30127E3A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spotify", "Spotify", "{58E652CA-F509-4B4F-BF90-1A092E0F651E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Application", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Application\DataStreamPro.Producer.Spotify.Application.csproj", "{D32FE385-14B6-4858-8DA2-DA8A0DFA1790}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FD9F0122-B8B6-4D95-BAFF-BFB865D42391}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Host", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Host\DataStreamPro.Producer.Spotify.Host.csproj", "{B1659878-254A-438C-B1CC-CCC9777F9E77}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.WebApi", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.WebApi\DataStreamPro.Producer.Spotify.WebApi.csproj", "{48E56BDA-B45D-46E6-A70E-CBB6822AE18C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{32506D0F-ED0B-4F42-8232-6827751FED85}"
 EndProject
@@ -45,13 +27,36 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{B708
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6D70063A-14EA-4D0C-B235-08F261383D9E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Common.Utils", "src\Common\DataStreamPro.Utils\DataStreamPro.Common.Utils.csproj", "{C79C178E-AB20-4AB3-AFAC-EADDBF31697F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EA5A7C89-81F6-4D5B-BCB4-C640D3F757CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FD9F0122-B8B6-4D95-BAFF-BFB865D42391}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5C28C124-EB78-42CD-B53B-30600699EA91}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{B132CA7B-AEAA-4DAA-9855-0E2D24AD1436}"
+EndProject
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Common", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Common\DataStreamPro.Producer.Spotify.Common.csproj", "{8C1F15B3-8C1B-4576-9FC8-41D0D31E3D4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Domain", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Domain\DataStreamPro.Producer.Spotify.Domain.csproj", "{27DD8A38-4113-4185-99E7-7AF73AB1C259}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Infrastructure.Data", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Infrastructure.Data\DataStreamPro.Producer.Spotify.Infrastructure.Data.csproj", "{262564B9-31DA-41E8-A4A2-13AFED3306A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Infrastructure", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Infrastructure\DataStreamPro.Producer.Spotify.Infrastructure.csproj", "{E7D44761-0F7B-40C9-972B-205E38658093}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Application", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Application\DataStreamPro.Producer.Spotify.Application.csproj", "{D32FE385-14B6-4858-8DA2-DA8A0DFA1790}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Host", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.Host\DataStreamPro.Producer.Spotify.Host.csproj", "{B1659878-254A-438C-B1CC-CCC9777F9E77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.WebApi", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.WebApi\DataStreamPro.Producer.Spotify.WebApi.csproj", "{48E56BDA-B45D-46E6-A70E-CBB6822AE18C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Common.Utils", "src\Common\DataStreamPro.Utils\DataStreamPro.Common.Utils.csproj", "{C79C178E-AB20-4AB3-AFAC-EADDBF31697F}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Web", "src\Presentation\DataStreamPro.Web\DataStreamPro.Web.csproj", "{7B23D66E-F984-4296-A183-29D287252049}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "src\Presentation\ClassLibrary1\ClassLibrary1.csproj", "{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.DataContracts", "src\Microservices\Producers\Spotify\DataStreamPro.Producer.Spotify.DataContracts\DataStreamPro.Producer.Spotify.DataContracts.csproj", "{0F9420A5-CB5C-49C4-AEAD-04F9A58CABB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStreamPro.Producer.Spotify.Infrastructure.UnitTests", "tests\DataStreamPro.Producer.Spotify.Infrastructure.UnitTests\DataStreamPro.Producer.Spotify.Infrastructure.UnitTests.csproj", "{F3328721-625B-4175-802A-DA53EAB8DAA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,10 +100,14 @@ Global
 		{7B23D66E-F984-4296-A183-29D287252049}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B23D66E-F984-4296-A183-29D287252049}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B23D66E-F984-4296-A183-29D287252049}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9420A5-CB5C-49C4-AEAD-04F9A58CABB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9420A5-CB5C-49C4-AEAD-04F9A58CABB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9420A5-CB5C-49C4-AEAD-04F9A58CABB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9420A5-CB5C-49C4-AEAD-04F9A58CABB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3328721-625B-4175-802A-DA53EAB8DAA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3328721-625B-4175-802A-DA53EAB8DAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3328721-625B-4175-802A-DA53EAB8DAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3328721-625B-4175-802A-DA53EAB8DAA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,7 +134,9 @@ Global
 		{C79C178E-AB20-4AB3-AFAC-EADDBF31697F} = {6D70063A-14EA-4D0C-B235-08F261383D9E}
 		{5C28C124-EB78-42CD-B53B-30600699EA91} = {30891B52-A8E1-4EBE-9C84-CB365FE80F3A}
 		{7B23D66E-F984-4296-A183-29D287252049} = {5C28C124-EB78-42CD-B53B-30600699EA91}
-		{F84F8B43-F045-42E9-9C6F-01B4C0620ED4} = {5C28C124-EB78-42CD-B53B-30600699EA91}
+		{0F9420A5-CB5C-49C4-AEAD-04F9A58CABB6} = {04CA4D72-C5ED-4AD0-9718-DFCFD1DF0402}
+		{F3328721-625B-4175-802A-DA53EAB8DAA5} = {B132CA7B-AEAA-4DAA-9855-0E2D24AD1436}
+		{B132CA7B-AEAA-4DAA-9855-0E2D24AD1436} = {29AA2308-7BDF-4F41-BA64-5CD9D62F6E84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {301E98B2-735E-482E-AB8A-6F3F8D317158}
