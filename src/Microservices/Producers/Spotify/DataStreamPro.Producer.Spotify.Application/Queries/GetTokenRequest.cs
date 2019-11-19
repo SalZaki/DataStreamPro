@@ -4,8 +4,7 @@ using DataStreamPro.Producer.Spotify.Application.Models;
 
 namespace DataStreamPro.Producer.Spotify.Application.Queries
 {
-    public class GetPlaylistRequest : IRequest<GetPlaylistsResponse>
+    public class GetTokenRequest : IRequest<GetTokenResponse>
     {
-        public string Id { get; set; }
     }
 }

@@ -11,12 +11,12 @@ using Xunit.Sdk;
 
 namespace DataStreamPro.Producer.Spotify.Infrastructure.UnitTests.Helpers
 {
-    public class LoadTextDataAttribute : DataAttribute
+    public class LoadDataAttribute : DataAttribute
     {
         private readonly string _fileName;
         private readonly string _section;
 
-        public LoadTextDataAttribute(string section)
+        public LoadDataAttribute(string section)
         {
             _fileName = "Data/test-data.json";
             _section = section;
