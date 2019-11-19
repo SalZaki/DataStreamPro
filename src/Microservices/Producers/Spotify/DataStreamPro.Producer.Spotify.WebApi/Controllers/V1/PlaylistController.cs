@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
 
 using MediatR;
 
-using DataStreamPro.Producer.Spotify.WebApi.Controllers;
+using Microsoft.AspNetCore.Mvc;
 
-namespace DataStreamPro.Producer.Spotify.WebApi
+namespace DataStreamPro.Producer.Spotify.WebApi.Controllers.V1
 {
     [ApiController]
     [ApiVersion("1.0")]
@@ -12,6 +12,8 @@ namespace DataStreamPro.Producer.Spotify.WebApi
     [Produces("application/xml", "application/json")]
     public class PlaylistController : BaseController
     {
+        private readonly IMapper _mapper;
+
         public PlaylistController(IMediator mediator)
             : base(mediator)
         {

@@ -2,9 +2,9 @@
 
 namespace DataStreamPro.Producer.Spotify.Infrastructure.Exceptions
 {
-    public abstract class SpotifyApiException : Exception
+    public abstract class BaseSpotifyApiException : Exception
     {
-        protected SpotifyApiException(string msg, Exception innerException)
+        protected BaseSpotifyApiException(string msg, Exception innerException)
             : base(msg, innerException)
         {
         }

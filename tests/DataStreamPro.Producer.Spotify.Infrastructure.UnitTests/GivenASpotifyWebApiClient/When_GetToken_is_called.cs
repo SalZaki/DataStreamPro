@@ -1,19 +1,20 @@
 ﻿using System.Net;
+using System.Text;
 using System.Net.Http;
 using System.Threading.Tasks;
 
 using Moq;
 using Xunit;
 using Shouldly;
+using Newtonsoft.Json;
+
+using DataStreamPro.Producer.Spotify.Application.Interfaces;
 
 using DataStreamPro.Producer.Spotify.Infrastructure.Http;
-using DataStreamPro.Producer.Spotify.Application.Interfaces;
+using DataStreamPro.Producer.Spotify.Infrastructure.Schema;
 using DataStreamPro.Producer.Spotify.Infrastructure.Exceptions;
 using DataStreamPro.Producer.Spotify.Infrastructure.UnitTests.Fakes;
 using DataStreamPro.Producer.Spotify.Infrastructure.UnitTests.Helpers;
-using DataStreamPro.Producer.Spotify.Infrastructure.Schema;
-using Newtonsoft.Json;
-using System.Text;
 
 namespace DataStreamPro.Producer.Spotify.Infrastructure.UnitTests.GivenASpotifyWebApiClient
 {
@@ -22,7 +23,7 @@ namespace DataStreamPro.Producer.Spotify.Infrastructure.UnitTests.GivenASpotifyW
         private ISpotifyWebApiClient _sut;
 
         [Theory]
-        [LoadTextData("authToken")]
+        [LoadData("authToken")]
         public async Task Then_It_Should_Return_A_Valid_Token(AuthToken authToken)
         {
             // Arrange
@@ -44,7 +45,7 @@ namespace DataStreamPro.Producer.Spotify.Infrastructure.UnitTests.GivenASpotifyW
         }
 
         [Theory]
-        [LoadTextData("authError")]
+        [LoadData("authError")]
         public async Task Then_It_Should_Throw_SpotifyWebApiClientException_When_Request_Is_Invalid(AuthError authError)
         {
             // Arrange

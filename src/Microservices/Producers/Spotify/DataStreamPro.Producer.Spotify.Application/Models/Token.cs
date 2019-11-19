@@ -1,5 +1,5 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace DataStreamPro.Producer.Spotify.Application.Models
 {
@@ -22,22 +22,11 @@ namespace DataStreamPro.Producer.Spotify.Application.Models
         [JsonProperty("refresh_token")]
         public string RefreshToken { get; set; }
 
-        [JsonProperty("error")]
-        public string Error { get; set; }
-
-        [JsonProperty("error_description")]
-        public string ErrorDescription { get; set; }
-
         public DateTime CreatedOn { get; set; }
 
         public bool IsExpired()
         {
             return CreatedOn.Add(TimeSpan.FromSeconds(ExpiresIn)) <= DateTime.Now;
-        }
-
-        public bool HasError()
-        {
-            return Error != null;
         }
     }
 }

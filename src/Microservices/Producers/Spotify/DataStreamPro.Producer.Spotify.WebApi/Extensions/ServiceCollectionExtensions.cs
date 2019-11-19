@@ -6,8 +6,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using DataStreamPro.Common.Utils.Extensions;
+
 using DataStreamPro.Producer.Spotify.Infrastructure.Http;
 using DataStreamPro.Producer.Spotify.Application.Interfaces;
+using DataStreamPro.Producer.Spotify.Application.Services;
 
 namespace DataStreamPro.Producer.Spotify.WebApi
 {
@@ -15,7 +17,8 @@ namespace DataStreamPro.Producer.Spotify.WebApi
     {
         public static IServiceCollection AddCoreComponents(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddTransient<ISpotifyWebApiClient, SpotifyWebApiClient>(); 
+            services.AddTransient<ISpotifyWebApiClient, SpotifyWebApiClient>();
+            services.AddTransient<ISpotifyService, SpotifyService>();
             return services;
         }
 

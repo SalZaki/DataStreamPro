@@ -5,21 +5,21 @@ using System.Threading.Tasks;
 using MediatR;
 using AutoMapper;
 
-using DataStreamPro.Producer.Spotify.Application.Interfaces;
 using DataStreamPro.Producer.Spotify.Application.Models;
 using DataStreamPro.Producer.Spotify.Application.Queries;
+using DataStreamPro.Producer.Spotify.Application.Interfaces;
 
-namespace DataStreamPro.Producer.Spotify.Application.UseCase
+namespace DataStreamPro.Producer.Spotify.Application.QueriesHandlers
 {
     public class GetPlaylistHandler : IRequestHandler<GetPlaylistRequest, GetPlaylistsResponse>
     {
-        private readonly ISpotifyService _spotifyService;
         private readonly IMapper _mapper;
+        private readonly ISpotifyService _spotifyService;
 
         public GetPlaylistHandler(ISpotifyService spotifyService, IMapper mapper)
         {
-            _spotifyService = spotifyService;
             _mapper = mapper;
+            _spotifyService = spotifyService;
         }
 
         public async Task<GetPlaylistsResponse> Handle(GetPlaylistRequest request, CancellationToken cancellationToken)
