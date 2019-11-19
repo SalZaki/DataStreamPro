@@ -18,4 +18,8 @@
     <ProjectReference Include="..\DataStreamPro.Producer.Spotify.Infrastructure\DataStreamPro.Producer.Spotify.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Responses\" />
+  </ItemGroup>
+
 </Project>

@@ -23,7 +23,7 @@ namespace DataStreamPro.Producer.Spotify.Infrastructure.UnitTests.GivenASpotifyW
         private ISpotifyWebApiClient _sut;
 
         [Theory]
-        [LoadTextData("authToken")]
+        [LoadData("authToken")]
         public async Task Then_It_Should_Return_A_Valid_Token(AuthToken authToken)
         {
             // Arrange
@@ -45,7 +45,7 @@ namespace DataStreamPro.Producer.Spotify.Infrastructure.UnitTests.GivenASpotifyW
         }
 
         [Theory]
-        [LoadTextData("authError")]
+        [LoadData("authError")]
         public async Task Then_It_Should_Throw_SpotifyWebApiClientException_When_Request_Is_Invalid(AuthError authError)
         {
             // Arrange
